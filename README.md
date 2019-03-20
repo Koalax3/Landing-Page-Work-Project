@@ -20,3 +20,5 @@ You will also see any lint errors in the console.
 Open [http://localhost:3000/admin](http://localhost:3000/admin) to view the page of admin in the browser.
 
 In the page you can change the recipient's adress of new user and consulted the user list.
+
+The user list can be Download in JSON
