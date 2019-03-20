@@ -1,0 +1,146 @@
+#pres {
+    background: #20495e;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+  }
+  
+#triangle-topright {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    width: 0; height: 0; 
+    border-top: 43vw solid #2c3e50; 
+    border-left: 100vw solid transparent;
+    background: transparent;
+    float: right;
+  }
+  
+.char{
+    position: absolute;
+      z-index: 10;
+      right: 0;
+      margin-top: 0;
+      margin-right: 5%;
+      color: #f1c40f;
+  }
+  
+.char h4{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-size: calc(1vh + 1vw);
+  }
+  
+.char p{
+    margin-top: 0;
+    width: calc(23vh + 22vw);
+    font-size: calc(0.8vh + 0.8vw);
+  }
+
+.char video {
+    width: calc(13vh + 13vw);
+    border-radius: 30px;
+  }
+  
+.demo{
+    z-index: 1;
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    position: relative;
+    max-width: 80vh;
+    height: 93vh;
+    width: 90%;
+    float: left;
+    color: #f1c40f;
+  }
+  
+.demo h4{
+    position: absolute;
+    bottom: 20vh;
+    font-size: calc(1vh + 1vw);
+    width: calc(26vh + 20vw);
+    left: 48vw;
+  }
+.demo p{
+    position: absolute;
+    bottom: 12vh;
+    left: 48vw;
+    font-size: calc(0.8vh + 0.8vw);
+    width: calc(22vh + 22vw);
+  }
+.mock{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    padding-top: 4vh;
+  }
+.mock img {
+    width: calc(31vh + 31vw);
+    transform: translateY(-8%);
+  }
+  
+.demo video {
+    width: calc(21vh + 20vw);
+    transform: translateX(-125%);
+  }
+  @media only screen and (max-width: 1200px) {
+    .mock{
+        max-width: 750px;
+    }
+}
+  @media only screen and (max-width: 1024px) {
+    .mock{
+        max-width: 750px;
+    }
+    .demo h4{
+        position: absolute;
+        bottom: 45vh;
+        left: 8vw;
+        font-size: calc(1vh + 1vw);
+        width: calc(26vh + 20vw);
+      }
+    .demo p{
+        position: absolute;
+        bottom: 38vh;
+        left: 8vw;
+        font-size: calc(0.8vh + 0.8vw);
+        width: calc(24vh + 22vw);
+      }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .mock{
+        max-width: 750px;
+    }
+    .demo video {
+        width: calc(21vh + 20vw);
+        transform: translateX(-125%);
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .mock{
+        max-width: 370px;
+    }
+    .demo video {
+        width: calc(19vh + 20vw);
+        transform: translateX(-130%);
+    }
+    .demo h4{
+        position: absolute;
+        bottom: 34vh;
+        left: 8vw;
+        font-size: calc(1vh + 1vw);
+        width: calc(26vh + 20vw);
+      }
+    .demo p{
+        position: absolute;
+        bottom: 28vh;
+        left: 8vw;
+        font-size: calc(0.8vh + 0.8vw);
+        width: calc(24vh + 22vw);
+      }
+  }

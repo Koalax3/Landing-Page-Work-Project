@@ -1,6 +1,6 @@
 #sub {
 	margin-top: 6vh;
-	background: url('https://loupsgarous.fr/assets/dist/img/scene_night.svg');
+	background: url('./assets/scene_night.svg');
 	background-size: cover;
 	min-height: 104vh;
 	scroll-behavior: smooth;

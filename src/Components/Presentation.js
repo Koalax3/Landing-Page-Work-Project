@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import mock from './assets/mockup-interface.png';
 import videoDemo from './assets/thumbnail.mp4';
 import videoChar from './assets/video_2.mp4';
+import './Presentation.css'
 class Prensentation extends Component {
   render() {
     return (
