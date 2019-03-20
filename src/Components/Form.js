@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './Form.css';
-var Email = window.smtp;
+import tWriter from '../tWriter';
 
+var Email = window.smtp;
 class Form extends Component {
     constructor(props) {
         super(props);
@@ -11,10 +12,14 @@ class Form extends Component {
             mail: '',
             favori: 'none',
         }
-
         this.handleChange = this.handleChange.bind(this);
         this.send = this.send.bind(this);
     }
+
+    componentDidMount() {
+        tWriter();
+      }
+
     send() {
         Email.send({
             Host: "smtp.elasticemail.com",
@@ -42,24 +47,29 @@ class Form extends Component {
 
     render() {
         return (
-            <div className="form-style-5">
-                        <legend>Inscris-toi et gagnes une clé de la bêta !</legend>
+            <div id="sub">
+                <div className="opacity">
+                    <h2 className="tw"></h2>
+                    <div className="form-style-5">
+                        <legend>Tentez de ganger une clé de la bêta !</legend>
                         <input type="text" name="firstname" onChange={this.handleChange} placeholder="Ton Prénom *" />
                         <input type="text" name="name" onChange={this.handleChange} placeholder="Ton Nom *" />
                         <input type="email" name="mail" onChange={this.handleChange} placeholder="Ton mail *" />
                         <label htmlFor="job">Ton Rôle favoris:</label>
                         <select id="job" name="favori" onChange={this.handleChange}>
-                                <option value="none">Selection du rôle</option>
-                                <option value="Villageois">Villageois</option>
-                                <option value="Loup-Garou">Loup-Garou</option>
-                                <option value="Sorcière">Sorcière</option>
-                                <option value="Voyante">Voyante</option>
-                                <option value="Loup Blanc">Loup Blanc</option>
-                                <option value="Loup Bavard">Loup Bavard</option>
-                                <option value="Chasseur">Chasseur</option>
-                                <option value="other">Autre</option>
+                            <option value="none">Selection du rôle</option>
+                            <option value="Villageois">Villageois</option>
+                            <option value="Loup-Garou">Loup-Garou</option>
+                            <option value="Sorcière">Sorcière</option>
+                            <option value="Voyante">Voyante</option>
+                            <option value="Loup Blanc">Loup Blanc</option>
+                            <option value="Loup Bavard">Loup Bavard</option>
+                            <option value="Chasseur">Chasseur</option>
+                            <option value="other">Autre</option>
                         </select>
-                    <button onClick={this.send}>Apply</button>
+                        <button onClick={this.send}>Apply</button>
+                    </div>
+                </div>
             </div>
         );
     }

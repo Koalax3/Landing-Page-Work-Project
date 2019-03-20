@@ -5,6 +5,7 @@
   "dependencies": {
     "elasticemail-webapiclient": "^2.0.8-s",
     "firebase": "^5.9.0",
+    "jquery": "^3.3.1",
     "lodash": "^4.17.11",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
