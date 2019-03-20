@@ -54,9 +54,11 @@ class Admin extends Component {
     }
 
     saveUser() {
-        var updates = {};
+        if (window.confirm('êtes-vous sur de vouloir sauvegarder la liste sur la base de données')) {
+            var updates = {};
             updates['email/listEmail'] = this.state.user;
-        return firebase.database().ref().update(updates);
+            return firebase.database().ref().update(updates);
+        }
     }
 
     send () {
