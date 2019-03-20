@@ -110,6 +110,10 @@
         font-size: calc(0.8vh + 0.8vw);
         width: calc(24vh + 22vw);
       }
+      .demo video {
+        width: calc(19vh + 20vw);
+        transform: translateX(-125%);
+    }
   }
 
   @media only screen and (max-width: 1000px) {
