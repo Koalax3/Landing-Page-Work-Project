@@ -31,7 +31,7 @@
 
 .logo a{
   color: #ecf0f1;
-  font-size: 1.5vw;
+  font-size: calc(10px + 1.3vmin);
   vertical-align: super;
 }
 .logo a span {
@@ -51,6 +51,7 @@
 
 .nav-link{
   color: #f1c40f;
+  font-size: calc(10px + 1.3vmin);
 }
 
 .nav-link:hover{
@@ -75,4 +76,10 @@
     -moz-filter: blur(4px);
     -o-filter: blur(4px);
     -ms-filter: blur(4px);
+}
+
+@media only screen and (max-width: 767px) {
+  .logo a{
+    display: none;
+  }
 }

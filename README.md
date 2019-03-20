@@ -7,6 +7,7 @@ I based my style on the Web-app : [https://loupsgarous.fr](https://loupsgarous.f
 
 In the project directory, you can run:
 ```
+$ npm install
 $ npm start
 ```
 Runs the app in the development mode.<br>
