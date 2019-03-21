@@ -35,6 +35,10 @@
 	font-size: 1.6em;
 	margin-bottom: 10px;
 }
+legend a:hover{
+	text-decoration: none;
+	outline: none;
+}
 .form-style-5 label {
 	display: block;
 	margin-bottom: 8px;

@@ -94,6 +94,7 @@ class Form extends Component {
                     <h2 className="tw"></h2>
                     <div className="form-style-5">
                         <legend>Tentez de ganger une clé de la bêta !</legend>
+                        <legend>Et rejoignez la meilleure commmunauté en ligne de <a href="https://www.eblong.com/zarf/werewolf.html">Werewolf</a></legend>
                         <input type="text" name="firstname" value={this.state.firstname} onChange={this.handleChange} placeholder="Ton Prénom *" />
                         <input type="text" name="name" value={this.state.name} onChange={this.handleChange} placeholder="Ton Nom *" />
                         <input type="email" name="mail" value={this.state.mail} onChange={this.handleChange} placeholder="Ton mail *" />
